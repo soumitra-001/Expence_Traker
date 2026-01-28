@@ -1,0 +1,19 @@
+.text-sm { font-size: 0.85rem; }
+.text-muted { color: var(--text-muted); }
+.flex { display: flex; }
+.justify-between { justify-content: space-between; }
+.items-center { align-items: center; }
+.gap-2 { gap: 0.5rem; }
+.mt-4 { margin-top: 1rem; }
+.hidden { display: none !important; }
+
+.icon { width: 16px; height: 16px; display: inline-block; fill: currentColor; }
+
+.toast-container {
+    position: fixed; bottom: 20px; right: 20px; display: flex; flex-direction: column; gap: 10px; z-index: 200;
+}
+.toast {
+    background: var(--bg-card); border-left: 4px solid var(--primary); padding: 1rem; border-radius: var(--radius);
+    box-shadow: var(--shadow); min-width: 250px; animation: slideIn 0.3s ease; display: flex; justify-content: space-between; align-items: center;
+}
+@keyframes slideIn { from { transform: translateX(100%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
